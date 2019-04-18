@@ -1,0 +1,5 @@
+node_modules
+*.log
+public/*
+package-lock.json
+!public/index.html
