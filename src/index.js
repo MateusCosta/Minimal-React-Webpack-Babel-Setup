@@ -1,10 +1,10 @@
-import React from 'react';
+import React,{Fragment} from 'react';
 import ReactDOM from 'react-dom';
+import Main from './main';
 
-const title = 'My Minimal React Webpack Babel Setup';
 
 ReactDOM.render(
-  <div>{title}</div>,
+  <Main />,
   document.getElementById('app')
 );
 

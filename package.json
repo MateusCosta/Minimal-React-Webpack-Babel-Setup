@@ -1,11 +1,15 @@
 {
-  "name": "ReactWebpack",
+  "name": "GnarApp",
   "version": "1.0.0",
-  "description": "A minimun boilerplate react and webpack project",
+  "description": "Gnar App",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --config ./webpack.config.js --mode development"
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "build": "webpack --mode production",
+    "production": "webpack --progress -p",
+    "dev": "webpack-dev-server --progress --colors --inline --hot",
+    "deploy": "node deploy"
   },
   "keywords": [],
   "author": "",
@@ -21,9 +25,19 @@
     "@babel/preset-env": "^7.4.3",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
+    "bulma": "^0.7.4",
+    "css-loader": "^2.1.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^3.0.1",
+    "ftp-deploy": "^2.3.3",
+    "node-sass": "^4.11.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-hot-loader": "^4.8.4",
+    "react-particles-js": "^2.6.0",
+    "react-router": "^5.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.3.1"
